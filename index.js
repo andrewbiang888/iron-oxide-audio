@@ -14,6 +14,9 @@ import('./pkg')
         fm.free();
         fm = null;
       }
+      const blah = new rust_module.IOAudio();
+      const time = blah.current_time()
+      console.log({ blah, time })
     });
 
     const primary_slider = document.getElementById("primary_input");
