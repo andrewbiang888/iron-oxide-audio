@@ -26,13 +26,13 @@ impl IOAudio {
     }
 
     #[wasm_bindgen]
-    pub fn pause(&mut self) {
-        self.ctx.suspend();
+    pub fn pause(&self) {
+        &self.ctx.suspend();
     }
 
     #[wasm_bindgen]
-    pub fn resume(&mut self) {
-        self.ctx.resume();
+    pub fn resume(&self) {
+        &self.ctx.resume();
     }
 
     #[wasm_bindgen]
